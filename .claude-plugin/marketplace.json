@@ -1,0 +1,14 @@
+{
+  "name": "snipkiwi",
+  "owner": { "name": "SnipKiwi", "url": "https://snipkiwi.com" },
+  "metadata": {
+    "description": "SnipKiwi: extract any website's design as real CSS and Tailwind, inside Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "snipkiwi",
+      "source": "./",
+      "description": "Extract any website's design as real CSS and Tailwind. Discover sections with an annotated screenshot, pull the authored CSS over the DevTools protocol, convert to Tailwind, adapt to your codebase, and verify against the reference. Free, local, no account."
+    }
+  ]
+}

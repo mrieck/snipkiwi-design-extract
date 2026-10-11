@@ -1,0 +1,22 @@
+node_modules/
+
+# dist/*.js is committed on purpose: Claude Code runs the plugin straight from the
+# GitHub checkout (node ${CLAUDE_PLUGIN_ROOT}/dist/mcp-server.js). Keep type
+# definitions and sourcemaps out.
+/dist/**/*.d.ts
+/dist/**/*.d.ts.map
+/dist/**/*.js.map
+
+# Extraction previews written by `--format html` / `--open`
+*.html
+!test/fixtures/*.html
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local env (the plugin needs none; this is just in case)
+.env
+.env.*
