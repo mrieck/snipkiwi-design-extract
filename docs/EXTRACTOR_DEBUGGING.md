@@ -25,10 +25,10 @@ node dist/index.js --url https://goodfirms.co --list --timeout 45000
 ```
 
 ```
-#1   Header       1366x76     .hds-color-mode.navigation.section
-#2   Hero Section 1366x595    .hds-color-mode.hero-section-container.section
-      "Global GDP running on Stripe…"
-#10  Section      1366x977    .hds-color-mode.stats-section…
+#1   Header       1366x76     .site-header
+#2   Hero Section 1366x595    .hero-section-container
+      "Get your plugin in front of…"
+#10  Section      1366x977    .stats-section…
 ...
 Extract one with:
   node dist/index.js --url https://goodfirms.co --selector '<selector>' --format json --json
@@ -101,7 +101,7 @@ them side by side to see whether the Tailwind rebuild matches the original.
 `{domain}_{tailwind|original}_{selector}_{timestamp}.html`.
 
 ```bash
-node dist/index.js -u https://stripe.com -s "section:nth-of-type(2)" -f html -o /tmp/extract
+node dist/index.js -u https://plugmyplugin.com -s "section:nth-of-type(2)" -f html -o /tmp/extract
 firefox /tmp/extract/*_tailwind_*.html /tmp/extract/*_original_*.html
 ```
 
@@ -111,7 +111,7 @@ Skip the manual open step — `--open` writes the previews and launches them in 
 browser (it implies `--format html`):
 
 ```bash
-node dist/index.js -u https://stripe.com -s ".hero-section-container" --open -o /tmp/x
+node dist/index.js -u https://plugmyplugin.com -s ".hero-section-container" --open -o /tmp/x
 ```
 
 Browser resolution (Linux): `$BROWSER` → `x-www-browser` → `firefox` →
@@ -120,7 +120,7 @@ first, because the `text/html` MIME here is hijacked by Slack — `--open` will
 never dump the preview into Slack. To force a specific browser:
 
 ```bash
-BROWSER=firefox node dist/index.js -u https://stripe.com -s ".hero" --open -o /tmp/x
+BROWSER=firefox node dist/index.js -u https://plugmyplugin.com -s ".hero" --open -o /tmp/x
 ```
 
 ---
@@ -149,7 +149,7 @@ The pipeline now:
 force-everything behavior. Also the A/B lever for proving the optimization is
 lossless (run with it on vs off, diff the JSON — must be identical). Gate on a
 local **deterministic fixture** (static HTML with hover/checked/media rules); do
-**not** byte-diff against stripe.com / tailwindcss.com / getbootstrap.com — they're
+**not** byte-diff against live sites like tailwindcss.com or getbootstrap.com — they're
 non-deterministic run-to-run (live counters, async DocSearch).
 
 ## The JSON output shape

@@ -28,8 +28,8 @@ in `tailcode-plugin` / `tailcode-db-builder` if the free plugin ever earns a pai
 npm install
 npm run build          # tsc → dist/
 npm run check          # build + scripts/smoke.mjs (initialize + tools/list, expects the 4 tools)
-node dist/index.js --url https://stripe.com --list
-node dist/index.js --url https://stripe.com --selector header --format both
+node dist/index.js --url https://plugmyplugin.com --list
+node dist/index.js --url https://plugmyplugin.com --selector header --format both
 ```
 
 No test framework. Dev-only skills in `.claude/skills/` (`/build-check`, `/test-extract`, `/test-mcp`,
