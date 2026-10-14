@@ -11,7 +11,7 @@ web page and converts it to Tailwind. One TypeScript codebase, two entry points:
   `list_page_elements`, `extract_css_convert_tailwind`, `compare_to_reference`.
 - `src/index.ts`: the CLI (`node dist/index.js --url … --selector …`, or `--list`).
 
-Plus two shipped skills in `skills/` (`build-like`, `extract`) that tell Claude how to chain the tools.
+Plus two shipped skills in `skills/` (`extract`, `clone-page`) that tell Claude how to chain the tools.
 
 Everything is free and local. No account, no API key, no telemetry, no backend. Keep it that way:
 the privacy claim on snipkiwi.com/claude and in the README is "nothing leaves your machine except

@@ -1,7 +1,7 @@
 {
   "name": "snipkiwi",
-  "description": "Extract any website's design as real CSS and Tailwind. Point Claude at a live page: SnipKiwi reads the authored CSS over the Chrome DevTools Protocol (media queries, hover states, variables, fonts), converts it to Tailwind, adapts it to your codebase, and verifies the result against the original. Free, local, no account.",
-  "version": "1.0.0",
+  "description": "Extract any website's design as real CSS and Tailwind. Point Claude at a live page: SnipKiwi reads the authored CSS over the Chrome DevTools Protocol (media queries, hover states, variables, fonts), converts it to Tailwind, integrates it into your codebase or clones a whole page, and verifies the result against the original. Free, local, no account.",
+  "version": "1.1.0",
   "author": { "name": "SnipKiwi", "url": "https://snipkiwi.com" },
   "homepage": "https://snipkiwi.com/claude",
   "documentationUrl": "https://snipkiwi.com/claude",

@@ -8,7 +8,7 @@
     {
       "name": "snipkiwi",
       "source": "./",
-      "description": "Extract any website's design as real CSS and Tailwind. Discover sections with an annotated screenshot, pull the authored CSS over the DevTools protocol, convert to Tailwind, adapt to your codebase, and verify against the reference. Free, local, no account."
+      "description": "Extract any website's design as real CSS and Tailwind. Discover sections with an annotated screenshot, pull the authored CSS over the DevTools protocol, convert to Tailwind, integrate into your codebase or clone a whole page, and verify against the reference. Free, local, no account."
     }
   ]
 }
