@@ -21,7 +21,7 @@ Works in Claude Code and Codex CLI. Free and local, with no account to create.
 
 ![SnipKiwi cloning plugmyplugin.com](docs/demo.gif)
 
-[![Watch the full demo](docs/demo-cover.png)](https://snipkiwi.com/claude)
+[![Watch the full demo](docs/demo-cover.png)](https://youtu.be/LwcFwTGIpSE)
 
 Click the image to watch the full demo.
 
