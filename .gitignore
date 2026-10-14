@@ -23,3 +23,6 @@ Thumbs.db
 
 # DemoDay render output (docs/demo.gif + docs/demo-cover.png are the committed cuts)
 demo/
+
+# SocialCue plugin scratch
+.socialdiscovery/
